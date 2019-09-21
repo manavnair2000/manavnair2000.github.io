@@ -35,7 +35,9 @@
             <!--header-start-->
             <div class="container" style="background-color: rgba(22, 19, 46, 0.65);">
                 <figure class="logo animated fadeInDown delay-07s">
-                    <a href="#"><img src="kratoslogo.png" alt=""></a> 
+                    <a href="#"><center>
+                            <img src="kratoslogo.png" alt="" style="float: none; postion:relative; margin-left:-45% !important;">
+                        </center></a> 
                 </figure>                 
                 <ul class="we-create animated fadeInUp delay-1s">
                     <font color="#bcbcbc" face="Montserrat, sans-serif"><span style="text-transform: uppercase; font-size: 13vw; font-weight: bold; color: #E53852; font-family: Baron Neue;">KRATOS 2.0</span></font>
@@ -43,6 +45,16 @@
                 </ul>
                 <a class="link animated fadeInUp delay-1s servicelink" href="#service" style="font-size: 17px; color: #E53852 !important; background-color: #FFFFFF; border-radius: 25px;">KNOW MORE</a>
                 <a class="link animated fadeInUp delay-1s servicelink" href="#Registration" style="font-size: 17px; color: #E53852 !important; background-color: #FEBE9F; border-radius: 25px;">REGISTRATION WILL OPEN SOON</a>
+            </div>
+            <div class="container" style="background-color: rgba(22, 19, 46, 0.65);">
+                <figure class="logo animated fadeInDown delay-07s">
+                    <a href="#"><center></center></a> 
+                </figure>                 
+            </div>
+            <script src="css/flipclock.js"></script>
+            <link itemprop="url" href="css/flipclock.css"/>
+            <div class="container we-create animated fadeInUp delay-1s" style="background-color: rgba(22, 19, 46, 0.65);">
+                <font color="#bcbcbc" face="Montserrat, sans-serif"></font>
             </div>
         </header>
         <nav class="main-nav-outer" id="test">
@@ -321,7 +333,7 @@
                         </div>
                         <ul class="social-link">
                             <li class="twitter">
-                                <a href="https://twitter.com/srm_easwari?lang=en"><i class="fa-twitter"></i></a>
+                                <a href="https://instagram.com/kratos__2.0?igshid=11susx0fry5oq"><i class="fa-instagram"></i></a>
                             </li>
                             <li class="facebook">
                                 <a href="https://www.facebook.com/SRMEaswariOfficial/"><i class="fa-facebook"></i></a>
@@ -335,26 +347,28 @@
                         <div class="form">
                             <div id="sendmessage">Your message has been sent. Thank you!</div>
                             <div id="errormessage"></div>
-                            <form action="" onsubmit="alert('Registrations will open soon!\n Please contact student council for more details')" method="post" role="form" class="contactForm">
+                            <form action="https://gmail.us20.list-manage.com/subscribe/post" method="post" role="form" class="contactForm">
+                                <input type="hidden" name="u" value="7be55cfff1dad8968c358bfdf">
+                                <input type="hidden" name="id" value="fd22f63b56">
                                 <div class="form-group">
-                                    <input type="text" name="name" class="form-control input-text" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars"/>
+                                    <input type="text" name="MERGE1" class="form-control input-text" id="MERGE1" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" required/>
                                     <div class="validation"></div>
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" class="form-control input-text" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email"/>
-                                    <input type="email" class="form-control input-text" name="email" id="email" placeholder="Your Phone Number" data-rule="email" data-msg="Please enter a valid email"/>
+                                    <input type="email" class="form-control input-text" name="MERGE0" id="MERGE0" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" required/>
+                                    <input type="text" class="form-control input-text" name="MERGE4" id="MERGE4" placeholder="Your Phone Number" data-rule="phone" data-msg="Please Enter valid Phone Number" required/>
                                     <div class="validation"></div>
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control input-text" name="subject" id="subject" placeholder="Your Department" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject"/>
-                                    <select class="form-control input-text">
+                                    <input type="text" class="form-control input-text" name="subject" id="subject" placeholder="Your Department" data-rule="minlen:4" data-msg="Please enter at least 8 chars of Department" required/>
+                                    <select class="form-control input-text" required>
                                         <option>Your Year</option>
                                         <option>1</option>
                                         <option>2</option>
                                         <option>3</option>
                                         <option>4</option>
                                     </select>
-                                    <input type="text" class="form-control input-text" name="subject" id="subject" placeholder="Your College" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject"/>
+                                    <input type="text" class="form-control input-text" name="College" id="College" placeholder="Your College" data-rule="minlen:4" data-msg="Please enter at least 8 chars of College" required/>
                                     <div class="validation"></div>
                                 </div>
                                 <div class="form-group">
