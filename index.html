@@ -44,18 +44,68 @@
                     <p><font color="#bcbcbc" face="Montserrat, sans-serif"><span style="text-transform: uppercase; font-size: 4vw; font-weight: bold; color: #FFB997; font-family: Baron Neue;">A national level TECHNICAL SYMPOSIUM</span></font></p>
                 </ul>
                 <a class="link animated fadeInUp delay-1s servicelink" href="#service" style="font-size: 17px; color: #E53852 !important; background-color: #FFFFFF; border-radius: 25px;">KNOW MORE</a>
-                <a class="link animated fadeInUp delay-1s servicelink" href="#Registration" style="font-size: 17px; color: #E53852 !important; background-color: #FEBE9F; border-radius: 25px;">REGISTer</a>
+                <a class="link animated fadeInUp delay-1s servicelink" href="#Registration" style="font-size: 17px; color: #E53852 !important; background-color: #FEBE9F; border-radius: 25px;">REGISTER</a>
+            </div>             
+            <br/> 
+            <br/>
+            <style>.count {
+    box-sizing: border-box;
+    display: inline-block;
+    font-size: 2.5vw;
+    list-style-type: none;
+    padding: 1em;
+    text-transform: uppercase;
+}
+
+.time {
+    box-sizing: border-box;
+    display: block;
+    font-size: 4vw;
+}
+
+.Time_list {
+    margin-left: -9vw;
+}</style>
+            <div class="container" id="Timer" style="font-transform:uppercase;   text-align: center; font-size: 4vw; font-weight: bold; color: #FFB997; font-family: Baron Neue; background-color:rgba(22, 19, 46, 0.65);">
+                <ul class="Time_list">
+                    <li class="count">
+                        <span class="time" id="days"></span>days
+                    </li>
+                    <li class="count">
+                        <span class="time" id="hours"></span>Hours
+                    </li>
+                    <li class="count">
+                        <span class="time" id="minutes"></span>Minutes
+                    </li>
+                    <li class="count">
+                        <span class="time" id="seconds"></span>Seconds
+                    </li>
+                </ul>
+                FOR SOMETHING EXHILARATING TO HAPPEN
             </div>
-            <div class="container" style="background-color: rgba(22, 19, 46, 0.65);">
-                <figure class="logo animated fadeInDown delay-07s">
-                    <a href="#"><center></center></a> 
-                </figure>                 
-            </div>
-            <script src="css/flipclock.js"></script>
-            <link itemprop="url" href="css/flipclock.css"/>
-            <div class="container we-create animated fadeInUp delay-1s" style="background-color: rgba(22, 19, 46, 0.65);">
-                <font color="#bcbcbc" face="Montserrat, sans-serif"></font>
-            </div>
+            <script>
+const second = 1000,
+      minute = second * 60,
+      hour = minute * 60,
+      day = hour * 24;
+
+let countDown = new Date('september 30, 2019 00:00:00').getTime(),
+    x = setInterval(function() {
+
+      let now = new Date().getTime(),
+          distance = countDown - now;
+
+      document.getElementById('days').innerText = Math.floor(distance / (day)),
+        document.getElementById('hours').innerText = Math.floor((distance % (day)) / (hour)),
+        document.getElementById('minutes').innerText = Math.floor((distance % (hour)) / (minute)),
+        document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second);
+      
+      if (distance < 0) {
+       clearInterval(x);
+        document.getElementById("Timer").innerHTML = "The Event has Started!";
+      }
+
+    }, second)</script>
         </header>
         <nav class="main-nav-outer Navbar_top" id="test" style="z-index: 5 !important;">
             <!--main-nav-start-->
@@ -319,7 +369,7 @@
                     <div id="find_us" class="col-lg-6 col-sm-7 wow fadeInLeft">
                         <div class="contact-info-box address clearfix">
                             <h3 style="color: #E53852;"><i class="icon-map-marker"></i>Address:</h3>
-                            <span><a href="https://www.google.com/maps/place/SRM+Easwari+Engineering+College/@13.0331403,80.1760575,17z/data=!3m1!4b1!4m5!3m4!1s0x3a5260d62bc6942b:0x8cd23707b2ddfb87!8m2!3d13.0331351!4d80.1782462"><p style="color: #FFB997;"> EASWARI ENGINEEING COLLEGE ,Bharathi Salai, Ramapuram, Chennai – 600 089</p></a></span>
+                            <span><a href="https://www.google.com/maps/place/SRM+Easwari+Engineering+College/@13.0331403,80.1760575,17z/data=!3m1!4b1!4m5!3m4!1s0x3a5260d62bc6942b:0x8cd23707b2ddfb87!8m2!3d13.0331351!4d80.1782462"><p style="color: #FFB997;">EASWARI ENGINEERING COLLEGE ,Bharathi Salai, Ramapuram, Chennai – 600 089</p></a></span>
                         </div>
                         <div class="contact-info-box phone clearfix">
 </div>
@@ -347,7 +397,7 @@
                         <div class="form">
                             <div id="sendmessage">Your message has been sent. Thank you!</div>
                             <div id="errormessage"></div>
-                            <form action="https://gmail.us20.list-manage.com/subscribe/post" method="post" role="form" class="contactForm">
+                            <form action="https://gmail.us20.list-manage.com/subscribe/post" method="post" onsubmit="alert('Registration Sucessful! \n We\'ll be waiting for you')" role="form" class="contactForm">
                                 <input type="hidden" name="u" value="7be55cfff1dad8968c358bfdf">
                                 <input type="hidden" name="id" value="fd22f63b56">
                                 <div class="form-group">
@@ -368,7 +418,7 @@
                                         <option>3</option>
                                         <option>4</option>
                                     </select>
-                                    <input type="text" class="form-control input-text" name="College" id="College" placeholder="Your College" data-rule="minlen:4" data-msg="Please enter at least 8 chars of College" required/>
+                                    <input type="text" class="form-control input-text" name="MERGE2" id="MERGE2" placeholder="Your College" data-rule="minlen:4" data-msg="Please enter at least 8 chars of College" required/>
                                     <div class="validation"></div>
                                 </div>
                                 <div class="form-group">
